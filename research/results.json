@@ -1,0 +1,95 @@
+{
+ "note": "real DaISy steam-generator data; closed-loop results are simulations on identified models",
+ "n": 9600,
+ "validation_simulation_fit_percent": 73.06236967331101,
+ "dc_gain_fuel_to_pressure": 318.25484046284083,
+ "nominal_poles_abs": [
+  0.24844943136498857,
+  0.6001870385055098,
+  0.9762307610603329
+ ],
+ "window_models": {
+  "n_early": 3,
+  "n_late": 4,
+  "dc_gain_early": [
+   291.8296920493722,
+   319.95382798897003,
+   301.8826845133456
+  ],
+  "dc_gain_late": [
+   315.0430870928446,
+   377.83238794243516,
+   346.19757854132854,
+   308.5650242869775
+  ]
+ },
+ "tuned_gains_normalised": {
+  "nominal": [
+   10.0,
+   0.2304092976055847
+  ],
+  "robust": [
+   10.0,
+   0.2304092976055847
+  ]
+ },
+ "evaluation": {
+  "nominal_tuning": {
+   "tuning_ensemble": {
+    "share_unstable": 0.0,
+    "median_cost": 0.01677486191842556,
+    "p90_cost": 0.0175913959640343,
+    "median_overshoot_stable": 0.2029337214032103
+   },
+   "late_ensemble_plant_drift": {
+    "share_unstable": 0.0,
+    "median_cost": 0.018382363098252752,
+    "p90_cost": 0.019557892956964952,
+    "median_overshoot_stable": 0.2820497476551198
+   },
+   "late_windows_only": {
+    "share_unstable": 0.0,
+    "median_cost": 0.017590244701765838,
+    "p90_cost": 0.01826126464219974,
+    "median_overshoot_stable": 0.2117618364424465
+   },
+   "nominal_model": {
+    "share_unstable": 0.0,
+    "median_cost": 0.016760546417561632,
+    "p90_cost": 0.016760546417561632,
+    "median_overshoot_stable": 0.19971897933019345
+   }
+  },
+  "robust_tuning": {
+   "tuning_ensemble": {
+    "share_unstable": 0.0,
+    "median_cost": 0.01677486191842556,
+    "p90_cost": 0.0175913959640343,
+    "median_overshoot_stable": 0.2029337214032103
+   },
+   "late_ensemble_plant_drift": {
+    "share_unstable": 0.0,
+    "median_cost": 0.018382363098252752,
+    "p90_cost": 0.019557892956964952,
+    "median_overshoot_stable": 0.2820497476551198
+   },
+   "late_windows_only": {
+    "share_unstable": 0.0,
+    "median_cost": 0.017590244701765838,
+    "p90_cost": 0.01826126464219974,
+    "median_overshoot_stable": 0.2117618364424465
+   },
+   "nominal_model": {
+    "share_unstable": 0.0,
+    "median_cost": 0.016760546417561632,
+    "p90_cost": 0.016760546417561632,
+    "median_overshoot_stable": 0.19971897933019345
+   }
+  }
+ },
+ "grid": {
+  "share_gain_pairs_stable_on_nominal": 0.46222486615110053,
+  "share_gain_pairs_stable_on_all_tuning_models": 0.4396192742415229,
+  "share_gain_pairs_stable_on_all_late_models": 0.42891136228435456
+ }
+}
