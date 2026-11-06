@@ -22,7 +22,7 @@ Tuned normalised gains (Kp x gain, Ki x gain): nominal (10.0, 0.23); robust (10.
 Share of the 41 x 41 gain pairs that are stable on the nominal model 0.46; on all tuning-ensemble models 0.44; on all late models 0.43.
 
 ## Findings and caveats
-- **The uncertainty-aware tuning is identical to the nominal tuning** on this plant: the cost-optimal gains lie well inside the stable region of every model, and the identified models differ little (gain varies by about ±15 %). No benefit of the robust variant is demonstrated; it would matter only for plants whose uncertainty reaches the stability boundary.
+- **The uncertainty-aware tuning is identical to the nominal tuning** on this plant: the cost-optimal gains lie well inside the stable region of every model, and the identified models differ little (window gains range from -8 % to +19 % around the nominal gain). No benefit of the robust variant is demonstrated; it would matter only for plants whose uncertainty reaches the stability boundary.
 - The cost-optimal gains give a median overshoot of about 20–28 % in simulation: the criterion (absolute error) favours speed over damping; no overshoot constraint was used.
 - The identified model is only moderately accurate (simulation fit 73 %); the single-loop design ignores the coupling with the other outputs and the disturbance input, which were held constant in the simulation. These unmodelled effects are the main risk and are not covered by the bootstrap or window ensembles.
 - About 55 % of the gain grid is unstable on every model — so tuning by trial on the plant would need care; the stable region itself is stable across models.
